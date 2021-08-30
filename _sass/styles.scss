@@ -1,2 +1,24 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+
+p,
+li {
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-text {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.list-group-hover .list-group-item {
+    transition: 0.3s;
+}
+
+.list-group-hover .list-group-item:hover {
+    background-color: rgba(192, 192, 192, 0.1);
+}
