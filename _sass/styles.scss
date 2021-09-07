@@ -4,11 +4,18 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
 
-
 // Custom
 .section-body {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+.section-body li {
+    margin-top: 5px;
+}
+
+.section-body>li {
+    margin-top: 20px;
 }
 
 // Cards
@@ -53,14 +60,24 @@ blockquote span {
     filter: invert(100%);
 }
 
+.carousel-indicators {
+    filter: invert(100%);
+}
+
 .carousel-caption {
     color: black;
     font-family: 'Montserrat', sans-serif;
 }
 
+.carousel-caption p {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
 .carousel {
     width: 100%;
-    height: 45vh;
+    height: 44vh;
     max-height: 45vh;
     overflow: hidden;
 }

@@ -1,6 +1,6 @@
 title:              Bladesmiths Blog
 email:              tlp6760@rit.edu
-description:        Team Bladesmiths' blog site for Capstone
+description:        Team Bladesmiths' Development Blog for Capstone
 author:             Team Bladesmiths
 baseurl:            ""
 url:                "https://bladesmiths.github.io"
@@ -17,7 +17,7 @@ google_analytics:    # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
-paginate:           8
+paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed
