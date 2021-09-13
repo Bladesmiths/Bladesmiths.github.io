@@ -1,16 +1,20 @@
 // Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
 
 // Custom
 .section-body {
-    font-size: 1.15rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .section-body li {
+    font-size: 1.2rem;
+    font-weight: 400;
     margin-top: 5px;
 }
 
@@ -21,19 +25,19 @@
 // Cards
 .card-header {
     font-size: 1.1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .card-text {
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
 // Blockquotes
 .blockquote p {
     font-size: 1.1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 blockquote span {
@@ -66,7 +70,7 @@ blockquote span {
 
 .carousel-caption {
     color: black;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .carousel-caption p {
@@ -77,12 +81,25 @@ blockquote span {
 
 .carousel {
     width: 100%;
-    height: 44vh;
-    max-height: 45vh;
     overflow: hidden;
+    position: relative;
+    height: 44vh;
+    // min-height: 400px;
 }
 
-.carousel-item>img {
-    width: 100%;
-    max-height: 45vh;
+// .carousel-item>img {
+//     width: 100%;
+//     min-height: 400px;
+// }
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel img {
+    height: 100%;
 }
