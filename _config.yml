@@ -1,9 +1,22 @@
-title:              Bladesmiths Blog
+title:              The Weapon Rack
 email:              bladesmiths.team@gmail.com
-description:        Team Bladesmiths' Development Blog for Capstone
+description:        Development Blog for <em>The Shattering Swords</em>
 author:             Bladesmiths
 baseurl:            ""
 url:                "https://bladesmiths.github.io"
+
+# --- Logo --- #
+
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
+# avatar: "/posts/favicon.png"
+
+# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+round-avatar: true
+
+# If you want to have an image logo in the top-left corner instead of having the title of the website,
+# then specify the following parameter
+title-img: /img/favicon.png
 
 # Social Profiles
 twitter_username:   
