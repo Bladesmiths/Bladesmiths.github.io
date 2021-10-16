@@ -11,7 +11,7 @@
     }
 
     .navbar-toggler {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 800;
         padding: 13px;
         text-transform: uppercase;
@@ -21,7 +21,7 @@
     .navbar-nav {
         >li.nav-item {
             >a {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 800;
                 letter-spacing: 1px;
                 text-transform: uppercase;
@@ -74,7 +74,7 @@
         &.is-fixed {
             /* when the user scrolls down, we hide the header right above the viewport */
             position: fixed;
-            top: -67px;
+            top: -140px;
             -webkit-transition: -webkit-transform 0.2s;
             -moz-transition: -moz-transform 0.2s;
             transition: transform 0.2s;
@@ -90,10 +90,15 @@
                 }
             }
 
+            .navbar-brand-logo {
+                filter: invert(1);
+            }
+
             .navbar-nav {
                 >li.nav-item {
                     >a {
                         color: $gray-900;
+                        font-size: 15px;
 
                         &:focus,
                         &:hover {
