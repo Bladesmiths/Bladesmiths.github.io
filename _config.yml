@@ -20,7 +20,7 @@ title-img: /img/favicon.png
 
 # Social Profiles
 twitter_username:   
-github_username:    
+github_username: Bladesmiths   
 facebook_username:  
 instagram_username:  
 linkedin_username:
@@ -30,7 +30,7 @@ google_analytics:    # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
-paginate:           4
+paginate:           8
 paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed

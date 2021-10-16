@@ -47,7 +47,7 @@
                 // Adjust the appearance of side-catalog
                 if ($(window).width() >= 1024) {
                     $catalog.show()
-                    if (currentTop > (bannerHeight + 41)) {
+                    if (currentTop > (bannerHeight - 40)) {
                         $catalog.addClass('fixed')
                     } else {
                         $catalog.removeClass('fixed')

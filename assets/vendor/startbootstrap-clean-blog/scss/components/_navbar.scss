@@ -74,7 +74,7 @@
         &.is-fixed {
             /* when the user scrolls down, we hide the header right above the viewport */
             position: fixed;
-            top: -140px;
+            top: -80px;
             -webkit-transition: -webkit-transform 0.2s;
             -moz-transition: -moz-transform 0.2s;
             transition: transform 0.2s;
@@ -92,13 +92,19 @@
 
             .navbar-brand-logo {
                 filter: invert(1);
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .navbar-brand-logo>img {
+                width: 64px;
             }
 
             .navbar-nav {
                 >li.nav-item {
                     >a {
                         color: $gray-900;
-                        font-size: 15px;
+                        font-size: 12px;
 
                         &:focus,
                         &:hover {
