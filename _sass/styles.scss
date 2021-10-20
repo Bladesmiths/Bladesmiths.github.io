@@ -1,6 +1,7 @@
 // Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
 
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
@@ -102,13 +103,14 @@ blockquote span {
 }
 
 .carousel-caption {
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Open Sans', sans-serif;
 }
 
 .carousel-caption p {
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: rgba(14, 14, 14, 0.6);
     border-radius: 10px;
 }
 
