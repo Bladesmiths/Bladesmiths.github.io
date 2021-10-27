@@ -77,8 +77,10 @@
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+
 <!-- Bootstrap Core JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <!-- async load function -->
 <script>
@@ -96,6 +98,59 @@
     s.parentNode.insertBefore(o, s);
   }
 </script>
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+  // only load tagcloud.js in tag.html
+  if ($('#tag_cloud').length !== 0) {
+    async ("/js/jquery.tagcloud.js", function () {
+      $.fn.tagcloud.defaults = {
+        //size: {start: 1, end: 1, unit: 'em'},
+        color: {
+          start: '#bbbbee',
+          end: '#0085a1'
+        },
+      };
+      $('#tag_cloud a').tagcloud();
+    })
+  }
+</script>
+
+
+<!--Tags Folding-->
+<script>
+  $(function () {
+    $("div.one-tag-list span").on('click', function () {
+      if ($(this).parent().hasClass('selected')) {
+        $(this).parent().removeClass('selected');
+        $(this).nextAll().slideUp("fast");
+        $(this).children().children().find('img').css('transform', 'rotate(0deg)');
+      } else {
+        //$(this).parent().siblings().removeClass('selected').find('div').hide();
+        $(this).parent().addClass('selected');
+        $(this).nextAll().slideDown("fast");
+        $(this).children().children().find('img').css('transform', 'rotate(810deg)');
+      }
+    });
+  });
+  // Show all & Hide all
+  $(function () {
+    $("button.button-show").on('click', function () {
+      $(this).parent().nextAll().addClass('selected');
+      $(this).parent().nextAll().find('span').nextAll().slideDown("fast");
+      $(this).parent().nextAll().find('img').css('transform', 'rotate(810deg)');
+    });
+  });
+  $(function () {
+    $("button.button-hide").on('click', function () {
+      $(this).parent().nextAll().removeClass('selected');
+      $(this).parent().nextAll().find('span').nextAll().slideUp("fast");
+      $(this).parent().nextAll().find('img').css('transform', 'rotate(0deg)');
+    });
+  });
+</script>
+
 
 <!-- Side Catalog -->
 {% unless page.no-catalog %}
