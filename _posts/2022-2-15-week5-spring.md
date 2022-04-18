@@ -94,12 +94,12 @@ And with that, we’ll move on to specific progress:
 
 <!-- 16:9 aspect ratio -->
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="/img/posts/week5-spring/18_TopazWalkAnimation.mov" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="/img/posts/week5-spring/18_TopazWalkAnimation.mp4" allowfullscreen></iframe>
 </div>
 
 <!-- 16:9 aspect ratio -->
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="/img/posts/week5-spring/18_TopazRunAnimation.mov" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="/img/posts/week5-spring/18_TopazRunAnimation.mp4" allowfullscreen></iframe>
 </div>
 
 <ul class="section-body mt-4">
